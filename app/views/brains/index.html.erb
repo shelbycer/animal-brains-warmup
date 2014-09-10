@@ -1,0 +1,18 @@
+<h1>Brains</h1>
+
+<table class="table">
+<thead>
+<th>Animal</th>
+<th>Body Weight</th>
+<th>Brain Weight</th>
+</thead>
+  <% @brains.each do |brain| %>
+  <tbody>
+  <tr>
+  <td><%= brain.animal %></td>
+  <td><%= brain.body %> kg.</td>
+  <td><%= brain.brain %> g.</td>
+  </tr>
+      <% end %>
+  </tbody>
+</table>
